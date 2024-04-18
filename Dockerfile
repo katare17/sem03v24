@@ -6,7 +6,7 @@ RUN apt-get update -y \
     && apt-get install -y \
     curl \
     git
-RUN curl -SL https://go.dev/dl/go1.21.7.linux-arm64.tar.gz \
+RUN curl -SL https://go.dev/dl/go1.22.2.linux-amd64.tar.gz \
     | tar xvz -C /usr/local
 ENV GOPATH /go
 ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
